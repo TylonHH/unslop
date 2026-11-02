@@ -2,7 +2,9 @@
 
 Created by Damir Sokolovsky ([@heydamir](https://x.com/heydamir)), who started the [Unslopping series](https://x.com/heydamir/status/2115063463063998736) on X.
 
-![A vibecoded dashboard unslopping itself, frame by frame](skills/unslop/references/refs/story-dashboard-frames.webp)
+> **Paperclip-compatible fork.** This fork moves the binary reference images under `assets/` so Paperclip's skill importer accepts the package. The design workflow is unchanged. See [PAPERCLIP.md](PAPERCLIP.md) for import steps, runtime dependencies and sandbox notes. Upstream: [heydamir/unslop](https://github.com/heydamir/unslop).
+
+![A vibecoded dashboard unslopping itself, frame by frame](skills/unslop/assets/refs/story-dashboard-frames.webp)
 
 unslop is a skill for Claude Code and Codex that turns vibecoded, AI-looking UI into a designed interface with its own character. It finds the slop first, the purple gradients, glows, emoji labels, shouty copy and uneven spacing, then sets a direction from your product and fixes the screen pass by pass like a designer doing a redline review. It works in whatever your screen is built with, like Next.js, React, Vue, Svelte, Tailwind or plain HTML and CSS, on dashboards, apps and landing pages, and even on a live site when all you have is a link.
 
@@ -38,6 +40,17 @@ npx playwright install chromium
 ```
 
 Story videos also require ffmpeg installed and available on your PATH.
+
+### Install in Paperclip
+
+Paperclip imports a skill straight from a GitHub repository:
+
+1. Open **Skills → Sources → Import from GitHub**.
+2. Repository: `https://github.com/TylonHH/unslop`
+3. Branch: `main`
+4. Skill path: `skills/unslop`
+
+The repository is public, so no GitHub connection is required. After import, enable the skill per agent under **Agent → Skills**. See [PAPERCLIP.md](PAPERCLIP.md) for the expected import warnings, Playwright browser paths, sandbox limits and house rules.
 
 ## Use
 

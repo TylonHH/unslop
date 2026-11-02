@@ -176,7 +176,7 @@ If the product already has a real brand, like a logo file, a color or a typeface
 
 ## Story video
 
-A short video where the screen unslops itself step by step, with red redlines on the slop. Look at [refs/story-dashboard-frames.webp](references/refs/story-dashboard-frames.webp) before you build it, eight frames from it in order. That video went viral, and this is how it works:
+A short video where the screen unslops itself step by step, with red redlines on the slop. Look at [story-dashboard-frames.webp](assets/refs/story-dashboard-frames.webp) before you build it, eight frames from it in order. That video went viral, and this is how it works:
 
 - **Nothing is swapped, everything morphs.** One page, and each step only changes CSS, so padding, gaps, sizes, colors, radii and shadows tween from the old value to the new one in place. You see the spacing open up, the purple drain out, the corners soften.
 - **A wave.** Elements start a few dozen milliseconds apart from the top left down, so a change runs across the screen instead of everything flipping at once.
