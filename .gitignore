@@ -5,6 +5,7 @@ runs/
 examples/*
 !examples/dashboard.html
 !examples/hero.html
+!examples/store.html
 !examples/assets/
 examples/assets/*
 !examples/assets/blob.webp
